@@ -9,7 +9,6 @@ from django.core.paginator import Paginator
 
 load_dotenv()
 
-
 def home(request):
     context = {   
         'design': Card.objects.filter(page__tag__tag = 'design'),
